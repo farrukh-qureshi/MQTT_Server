@@ -139,3 +139,8 @@ To fix this, use `chmod 0700 /mosquitto/config/passwd`.
 1733830457: Client auto-5B417E1C-6ED7-9EBF-E3DF-D05AFBFBEFE1 disconnected.
 1733830459: Received DISCONNECT from auto-2966DD49-10DB-5F31-143F-703F76223175
 1733830459: Client auto-2966DD49-10DB-5F31-143F-703F76223175 disconnected.
+1733833624: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1733833624: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1733833624: Warning: File /mosquitto/data//mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data//mosquitto.db.new`.
+1733833624: Warning: File /mosquitto/data//mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.

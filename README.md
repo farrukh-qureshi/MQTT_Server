@@ -72,6 +72,74 @@ mosquitto_sub -h localhost -t "test/topic"
 mosquitto_pub -h localhost -t "test/topic" -m "Hello MQTT"
 ```
 
+## Data Logging with Python
+
+To log data from the MQTT server, set up a Python script using the `paho-mqtt` library:
+
+1. **Install the `paho-mqtt` library**:
+   ```bash
+   pip install paho-mqtt
+   ```
+
+2. **Create and Run the Script**:
+   - Save the following script as `mqtt_data_logger.py`:
+   
+   ```python
+   import paho.mqtt.client as mqtt
+   import json
+   import csv
+
+   # MQTT broker details
+   broker = "localhost"
+   port = 1883
+   topic = "agri/soil"
+
+   # CSV file to store data
+   csv_file = "sensor_data.csv"
+
+   # Initialize CSV file with headers
+   with open(csv_file, mode='w', newline='') as file:
+       writer = csv.writer(file)
+       writer.writerow(["Conductivity", "Moisture", "Temperature", "pH", "Nitrogen", "Phosphorus", "Potassium"])
+
+   # The callback for when a PUBLISH message is received from the server.
+   def on_message(client, userdata, msg):
+       try:
+           # Decode and parse the JSON message
+           data = json.loads(msg.payload.decode())
+           # Append data to CSV
+           with open(csv_file, mode='a', newline='') as file:
+               writer = csv.writer(file)
+               writer.writerow([
+                   data.get("conductivity"),
+                   data.get("moisture"),
+                   data.get("temperature"),
+                   data.get("ph"),
+                   data.get("nitrogen"),
+                   data.get("phosphorus"),
+                   data.get("potassium")
+               ])
+           print(f"Data saved: {data}")
+       except Exception as e:
+           print(f"Error processing message: {e}")
+
+   client = mqtt.Client()
+   client.on_message = on_message
+
+   client.connect(broker, port, 60)
+   client.subscribe(topic)
+
+   # Blocking call that processes network traffic, dispatches callbacks and handles reconnecting.
+   client.loop_forever()
+   ```
+
+3. **Run the Script**:
+   ```bash
+   python mqtt_data_logger.py
+   ```
+
+This will log the sensor data to a CSV file on your server.
+
 ## AWS Deployment Instructions
 
 1. Launch an EC2 instance:
