@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt_broker
+    ports:
+      - "1883:1883"  # MQTT default port
+      - "8883:8883"  # MQTT over TLS
+      - "9001:9001"  # WebSocket port
+    volumes:
+      - ./config:/mosquitto/config
+      - ./data:/mosquitto/data
+      - ./logs:/mosquitto/log
+      - ./certs:/mosquitto/certs
+    restart: unless-stopped

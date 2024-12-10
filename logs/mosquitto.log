@@ -1,0 +1,141 @@
+1733829907: mosquitto version 2.0.20 starting
+1733829907: Config loaded from /mosquitto/config/mosquitto.conf.
+1733829907: Opening ipv4 listen socket on port 1883.
+1733829907: Opening ipv6 listen socket on port 1883.
+1733829907: mosquitto version 2.0.20 running
+1733830111: mosquitto version 2.0.20 terminating
+1733830111: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1733830111: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1733830111: Warning: File /mosquitto/data//mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data//mosquitto.db.new`.
+1733830111: Warning: File /mosquitto/data//mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1733830113: mosquitto version 2.0.20 starting
+1733830113: Config loaded from /mosquitto/config/mosquitto.conf.
+1733830113: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1733830113: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+1733830113: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+1733830113: Opening ipv4 listen socket on port 1883.
+1733830113: Opening ipv6 listen socket on port 1883.
+1733830113: Opening ipv4 listen socket on port 8883.
+1733830113: Opening ipv6 listen socket on port 8883.
+1733830113: Opening websockets listen socket on port 9001.
+1733830113: mosquitto version 2.0.20 running
+1733830153: New connection from 172.18.0.1:35616 on port 8883.
+1733830153: Sending CONNACK to auto-95B572D2-65AD-26A1-B86B-09CEE94BF73E (0, 5)
+1733830153: Client auto-95B572D2-65AD-26A1-B86B-09CEE94BF73E disconnected, not authorised.
+1733830166: New connection from 172.18.0.1:38820 on port 8883.
+1733830166: Sending CONNACK to auto-F52D55CA-5D57-4ED4-57D2-9A0CEB725B48 (0, 5)
+1733830166: Client auto-F52D55CA-5D57-4ED4-57D2-9A0CEB725B48 disconnected, not authorised.
+1733830234: mosquitto version 2.0.20 terminating
+1733830234: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1733830234: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1733830234: Warning: File /mosquitto/data//mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data//mosquitto.db.new`.
+1733830234: Warning: File /mosquitto/data//mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1733830235: mosquitto version 2.0.20 starting
+1733830235: Config loaded from /mosquitto/config/mosquitto.conf.
+1733830235: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1733830235: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+1733830235: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+1733830235: Opening ipv4 listen socket on port 1883.
+1733830235: Opening ipv6 listen socket on port 1883.
+1733830235: Opening ipv4 listen socket on port 8883.
+1733830235: Opening ipv6 listen socket on port 8883.
+1733830235: mosquitto version 2.0.20 running
+1733830240: New connection from 172.18.0.1:47396 on port 8883.
+1733830240: New client connected from 172.18.0.1:47396 as auto-772FFA19-9277-56F6-907F-64E1B80468C0 (p2, c1, k60, u'admin').
+1733830240: No will message specified.
+1733830240: Sending CONNACK to auto-772FFA19-9277-56F6-907F-64E1B80468C0 (0, 0)
+1733830240: Received SUBSCRIBE from auto-772FFA19-9277-56F6-907F-64E1B80468C0
+1733830240: 	test/topic (QoS 0)
+1733830240: auto-772FFA19-9277-56F6-907F-64E1B80468C0 0 test/topic
+1733830240: Sending SUBACK to auto-772FFA19-9277-56F6-907F-64E1B80468C0
+1733830250: New connection from 172.18.0.1:52012 on port 8883.
+1733830250: New client connected from 172.18.0.1:52012 as auto-ABC29A46-38D8-EACE-2C8C-124CDF37CBB9 (p2, c1, k60, u'admin').
+1733830250: No will message specified.
+1733830250: Sending CONNACK to auto-ABC29A46-38D8-EACE-2C8C-124CDF37CBB9 (0, 0)
+1733830250: Received PUBLISH from auto-ABC29A46-38D8-EACE-2C8C-124CDF37CBB9 (d0, q0, r0, m0, 'test/topic', ... (12 bytes))
+1733830250: Sending PUBLISH to auto-772FFA19-9277-56F6-907F-64E1B80468C0 (d0, q0, r0, m0, 'test/topic', ... (12 bytes))
+1733830250: Received DISCONNECT from auto-ABC29A46-38D8-EACE-2C8C-124CDF37CBB9
+1733830250: Client auto-ABC29A46-38D8-EACE-2C8C-124CDF37CBB9 disconnected.
+1733830261: New connection from 172.18.0.1:33066 on port 8883.
+1733830261: New client connected from 172.18.0.1:33066 as auto-792AF805-56F3-6089-C619-B98461AE67F0 (p2, c1, k60, u'admin').
+1733830261: No will message specified.
+1733830261: Sending CONNACK to auto-792AF805-56F3-6089-C619-B98461AE67F0 (0, 0)
+1733830261: Received PUBLISH from auto-792AF805-56F3-6089-C619-B98461AE67F0 (d0, q0, r0, m0, 'test/topic', ... (12 bytes))
+1733830261: Sending PUBLISH to auto-772FFA19-9277-56F6-907F-64E1B80468C0 (d0, q0, r0, m0, 'test/topic', ... (12 bytes))
+1733830261: Received DISCONNECT from auto-792AF805-56F3-6089-C619-B98461AE67F0
+1733830261: Client auto-792AF805-56F3-6089-C619-B98461AE67F0 disconnected.
+1733830280: Received DISCONNECT from auto-772FFA19-9277-56F6-907F-64E1B80468C0
+1733830280: Client auto-772FFA19-9277-56F6-907F-64E1B80468C0 disconnected.
+1733830364: mosquitto version 2.0.20 terminating
+1733830364: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1733830364: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1733830364: Warning: File /mosquitto/data//mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data//mosquitto.db.new`.
+1733830364: Warning: File /mosquitto/data//mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.
+1733830366: mosquitto version 2.0.20 starting
+1733830366: Config loaded from /mosquitto/config/mosquitto.conf.
+1733830366: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1733830366: Warning: File /mosquitto/config/passwd owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/config/passwd`.
+1733830366: Warning: File /mosquitto/config/passwd group is not mosquitto. Future versions will refuse to load this file.
+1733830366: Opening ipv4 listen socket on port 1883.
+1733830366: Opening ipv6 listen socket on port 1883.
+1733830366: Opening ipv4 listen socket on port 8883.
+1733830366: Opening ipv6 listen socket on port 8883.
+1733830366: mosquitto version 2.0.20 running
+1733830370: New connection from 172.18.0.1:40184 on port 1883.
+1733830370: New client connected from 172.18.0.1:40184 as auto-8BFB3953-1531-3846-A892-858F1EBDC2D5 (p2, c1, k60, u'admin').
+1733830370: No will message specified.
+1733830370: Sending CONNACK to auto-8BFB3953-1531-3846-A892-858F1EBDC2D5 (0, 0)
+1733830370: Received SUBSCRIBE from auto-8BFB3953-1531-3846-A892-858F1EBDC2D5
+1733830370: 	test/topic (QoS 0)
+1733830370: auto-8BFB3953-1531-3846-A892-858F1EBDC2D5 0 test/topic
+1733830370: Sending SUBACK to auto-8BFB3953-1531-3846-A892-858F1EBDC2D5
+1733830380: New connection from 172.18.0.1:50812 on port 1883.
+1733830380: New client connected from 172.18.0.1:50812 as auto-CA358A64-2B31-494D-3D9B-ADEA00619A5D (p2, c1, k60, u'admin').
+1733830380: No will message specified.
+1733830380: Sending CONNACK to auto-CA358A64-2B31-494D-3D9B-ADEA00619A5D (0, 0)
+1733830380: Received PUBLISH from auto-CA358A64-2B31-494D-3D9B-ADEA00619A5D (d0, q0, r0, m0, 'test/topic', ... (10 bytes))
+1733830380: Sending PUBLISH to auto-8BFB3953-1531-3846-A892-858F1EBDC2D5 (d0, q0, r0, m0, 'test/topic', ... (10 bytes))
+1733830380: Received DISCONNECT from auto-CA358A64-2B31-494D-3D9B-ADEA00619A5D
+1733830380: Client auto-CA358A64-2B31-494D-3D9B-ADEA00619A5D disconnected.
+1733830386: New connection from 172.18.0.1:50818 on port 1883.
+1733830386: New client connected from 172.18.0.1:50818 as auto-5B8E8558-8C22-DE2E-68B5-4022AD6FFAB4 (p2, c1, k60, u'admin').
+1733830386: No will message specified.
+1733830386: Sending CONNACK to auto-5B8E8558-8C22-DE2E-68B5-4022AD6FFAB4 (0, 0)
+1733830386: Received PUBLISH from auto-5B8E8558-8C22-DE2E-68B5-4022AD6FFAB4 (d0, q0, r0, m0, 'test/topic', ... (10 bytes))
+1733830386: Sending PUBLISH to auto-8BFB3953-1531-3846-A892-858F1EBDC2D5 (d0, q0, r0, m0, 'test/topic', ... (10 bytes))
+1733830386: Received DISCONNECT from auto-5B8E8558-8C22-DE2E-68B5-4022AD6FFAB4
+1733830386: Client auto-5B8E8558-8C22-DE2E-68B5-4022AD6FFAB4 disconnected.
+1733830388: Received DISCONNECT from auto-8BFB3953-1531-3846-A892-858F1EBDC2D5
+1733830388: Client auto-8BFB3953-1531-3846-A892-858F1EBDC2D5 disconnected.
+1733830437: New connection from 172.18.0.1:51328 on port 8883.
+1733830437: New client connected from 172.18.0.1:51328 as auto-2966DD49-10DB-5F31-143F-703F76223175 (p2, c1, k60, u'admin').
+1733830437: No will message specified.
+1733830437: Sending CONNACK to auto-2966DD49-10DB-5F31-143F-703F76223175 (0, 0)
+1733830437: Received SUBSCRIBE from auto-2966DD49-10DB-5F31-143F-703F76223175
+1733830437: 	test/topic (QoS 0)
+1733830437: auto-2966DD49-10DB-5F31-143F-703F76223175 0 test/topic
+1733830437: Sending SUBACK to auto-2966DD49-10DB-5F31-143F-703F76223175
+1733830442: New connection from 172.18.0.1:51336 on port 8883.
+1733830442: New client connected from 172.18.0.1:51336 as auto-7FE5472A-25F7-1212-1018-0006F2C6FAED (p2, c1, k60, u'admin').
+1733830442: No will message specified.
+1733830442: Sending CONNACK to auto-7FE5472A-25F7-1212-1018-0006F2C6FAED (0, 0)
+1733830443: Received PUBLISH from auto-7FE5472A-25F7-1212-1018-0006F2C6FAED (d0, q0, r0, m0, 'test/topic', ... (17 bytes))
+1733830443: Sending PUBLISH to auto-2966DD49-10DB-5F31-143F-703F76223175 (d0, q0, r0, m0, 'test/topic', ... (17 bytes))
+1733830443: Received DISCONNECT from auto-7FE5472A-25F7-1212-1018-0006F2C6FAED
+1733830443: Client auto-7FE5472A-25F7-1212-1018-0006F2C6FAED disconnected.
+1733830457: New connection from 172.18.0.1:33342 on port 8883.
+1733830457: New client connected from 172.18.0.1:33342 as auto-5B417E1C-6ED7-9EBF-E3DF-D05AFBFBEFE1 (p2, c1, k60, u'admin').
+1733830457: No will message specified.
+1733830457: Sending CONNACK to auto-5B417E1C-6ED7-9EBF-E3DF-D05AFBFBEFE1 (0, 0)
+1733830457: Received PUBLISH from auto-5B417E1C-6ED7-9EBF-E3DF-D05AFBFBEFE1 (d0, q0, r0, m0, 'test/topic', ... (11 bytes))
+1733830457: Sending PUBLISH to auto-2966DD49-10DB-5F31-143F-703F76223175 (d0, q0, r0, m0, 'test/topic', ... (11 bytes))
+1733830457: Received DISCONNECT from auto-5B417E1C-6ED7-9EBF-E3DF-D05AFBFBEFE1
+1733830457: Client auto-5B417E1C-6ED7-9EBF-E3DF-D05AFBFBEFE1 disconnected.
+1733830459: Received DISCONNECT from auto-2966DD49-10DB-5F31-143F-703F76223175
+1733830459: Client auto-2966DD49-10DB-5F31-143F-703F76223175 disconnected.
