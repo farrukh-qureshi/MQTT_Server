@@ -10,6 +10,54 @@ This repository contains the configuration for a Mosquitto MQTT broker that can 
    docker-compose up -d
    ```
 
+## Installation on Ubuntu
+
+1. Update the package list:
+   ```bash
+   sudo apt update
+   ```
+
+2. Install Docker:
+   ```bash
+   sudo apt install -y docker.io
+   sudo systemctl start docker
+   sudo systemctl enable docker
+   ```
+
+3. Install Docker Compose:
+   ```bash
+   sudo apt install -y docker-compose
+   ```
+
+4. Add your user to the docker group:
+   ```bash
+   sudo usermod -aG docker $USER
+   ```
+
+5. Log out and back in to apply group changes.
+
+## Installation on Fedora
+
+1. Install Docker:
+   ```bash
+   sudo dnf -y install dnf-plugins-core
+   sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+   sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+   ```
+
+2. Start and enable Docker:
+   ```bash
+   sudo systemctl start docker
+   sudo systemctl enable docker
+   ```
+
+3. Add your user to the docker group:
+   ```bash
+   sudo usermod -aG docker $USER
+   ```
+
+4. Log out and back in to apply group changes.
+
 ## Testing the Server
 You can test the server using mosquitto clients:
 
